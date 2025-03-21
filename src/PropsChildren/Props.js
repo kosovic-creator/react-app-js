@@ -1,7 +1,11 @@
 import React from 'react'
+import Parent from './Parent'
 
 export default function Props() {
   return (
-    <div>Props</div>
+    <>
+      <Parent/>
+      <div>Props</div>
+    </>
   )
 }
