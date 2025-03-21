@@ -7,11 +7,12 @@ import AppReducer from './AppReducer';
 import Props from './PropsChildren/Props';
 import reportWebVitals from './reportWebVitals';
 import Checkout from './LiftingUp/Checkout';
+import DateCounter from './DateCounter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Props />
+    <DateCounter />
   </React.StrictMode>
 );
 
