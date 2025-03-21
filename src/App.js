@@ -25,7 +25,7 @@ const data = [
   },
 ];
 function App() {
-  const [profil, settProfil] = useState(
+  const [profil, setProfil] = useState(
     [{ naziv: 'marko', cijena: 30 }, { naziv: 'kosta', cijena: 30 }]);
   const [item, setItem] = useState([]);
   const [dozvola, setDozvola] = useState(false);
@@ -42,8 +42,8 @@ function App() {
     localStorage.setItem('profil', JSON.stringify(profil));
     localStorage.setItem('naziv', JSON.stringify('LokalStorage'));
     const storage = localStorage.getItem('naziv');
-    alert(storage)
-    setDozvola(true);
+    // alert(storage)
+    //setDozvola(true);
   }, [profil]);
   return (
     <>
@@ -51,7 +51,7 @@ function App() {
 
   {/* {ime.map((item, index) => ( */}
 
-  {dozvola && <h1>Dozvola</h1>}
+  {dozvola && <h3>Dozvola</h3>}
       {data.map((person) => (
         <div key={person.id}>
           <div className='flex justify-left items-center space-x-3'>
@@ -60,7 +60,7 @@ function App() {
           </div>
         </div>
       ))}
-      <button className='bg-slate-400' onClick={() => settProfil(profil => [...profil, { naziv: 'sofija', cijena: 88 }])}>SetIProfilUseState</button>
+      <button className='bg-slate-400' onClick={() => { setProfil(profil => [...profil, { naziv: 'sofija', cijena: 88 }]); setDozvola(true); }}>SetIProfilUseState</button>
       <button className='bg-slate-400' onClick={() => setItem([...item, 'ana'])}>Set Ana array useEfect</button>
       <p>{item}</p>
 
