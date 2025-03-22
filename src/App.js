@@ -60,7 +60,7 @@ function App() {
           </div>
         </div>
       ))}
-      <button className='bg-slate-400' onClick={() => { setProfil(profil => [...profil, { naziv: 'sofija', cijena: 88 }]); setDozvola(true); }}>SetIProfilUseState</button>
+      <button className='bg-slate-400' onClick={() => { setProfil(profil => [...profil, { naziv: 'sofija', cijena: 88 }]); setDozvola(true); }}>SetIProfilUseStateI Dozvola</button>
       <button className='bg-slate-400' onClick={() => setItem([...item, 'ana'])}>Set Ana array useEfect</button>
       <p>{item}</p>
 
