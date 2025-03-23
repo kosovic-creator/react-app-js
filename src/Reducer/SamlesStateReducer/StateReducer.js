@@ -34,12 +34,12 @@ function StateReducer() {
             <button className='btn' onClick={() => setItem('Hello')}>State</button>
             <h3>{item}</h3>
             <button className='btn' onClick={() => dispatch({ type: 'dodaj' })}>Reducer</button>
-           <div className='flex-row  m-auto'>
+           <ul >
 
            <h4 className='m-auto ' >bod:{state1.bod}</h4>
            <h4 className='m-auto '>Ime: {state1.agent}</h4>
            <h4 className='mt-auto '>Oblast: {state1.oblast}</h4>
-            </div>
+            </ul>
 
         </>
     )
