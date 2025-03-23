@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useReducer, useState } from "react";
-import  './index2.css';
+
 
 
 const initialState = { count: 0 };
