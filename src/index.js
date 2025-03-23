@@ -9,10 +9,13 @@ import reportWebVitals from './reportWebVitals';
 import Checkout from './LiftingUp/Checkout';
 import DateCounter from './Reducer/DateCounter';
 
+import StateReducer from './Reducer/SamlesStateReducer/StateReducer';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StateReducer />
+
   </React.StrictMode>
 );
 

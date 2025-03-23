@@ -1,5 +1,5 @@
 :root {
-  --color-darkest: #343a40;
+  --color-darkest: #dfe5ec;
   --color-dark: #495057;
   --color-medium: #ced4da;
   --color-light: #f1f3f5;
@@ -72,6 +72,7 @@ h2 {
 }
 
 h3 {
+  font-family: "Codystar";
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 4rem;
