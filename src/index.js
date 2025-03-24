@@ -9,6 +9,7 @@ import Props from './PropsChildren/Props';
 import reportWebVitals from './reportWebVitals';
 import Checkout from './LiftingUp/Checkout';
 import DateCounter from './Reducer/DateCounter';
+import AppRedux from './ReduxToolkit/AppRedux'; // Update the path to the correct location of AppRedux
 
 import StateReducer from './Reducer/SamlesStateReducer/StateReducer';
 
@@ -16,7 +17,7 @@ import StateReducer from './Reducer/SamlesStateReducer/StateReducer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DateCounter />
+    <AppRedux/>
 
   </React.StrictMode>
 );
