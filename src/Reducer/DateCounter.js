@@ -40,11 +40,11 @@ function DateCounter() {
     <div className="counter">
       <div>
         <button onClick={dec}>-</button>
-        <input value={count} />
+        <input className="text-center border-s-orange-800" type="text" value={count} />
         <button onClick={inc}>+</button>
       </div>
       <div>
-        <button onClick={reset}>Reset</button>
+        <button  className=" bg-red-800 hover:bg-red-400 text-zinc-50 shadow-md shadow-red-500" onClick={reset}>Reset</button>
       </div>
     </div>
   );
